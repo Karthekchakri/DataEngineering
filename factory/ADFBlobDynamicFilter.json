@@ -1,0 +1,9 @@
+{
+	"name": "ADFBlobDynamicFilter",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d7f8f631-753f-47d9-8da0-0e55e3e57dac",
+		"tenantId": "5f655bda-efcc-4721-8056-b2eac8d124f3"
+	}
+}
