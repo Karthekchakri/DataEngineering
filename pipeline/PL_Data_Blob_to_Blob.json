@@ -53,7 +53,10 @@
 						"referenceName": "DS_ABS_Source_Multi",
 						"type": "DatasetReference",
 						"parameters": {
-							"SourceContainer": "source"
+							"SourceContainer": {
+								"value": "@pipeline().parameters.inputValue",
+								"type": "Expression"
+							}
 						}
 					}
 				],
@@ -62,12 +65,23 @@
 						"referenceName": "DS_ABS_Sink_Multi",
 						"type": "DatasetReference",
 						"parameters": {
-							"SinkContainer": "sink"
+							"SinkContainer": {
+								"value": "@pipeline().parameters.outputValue",
+								"type": "Expression"
+							}
 						}
 					}
 				]
 			}
 		],
+		"parameters": {
+			"inputValue": {
+				"type": "string"
+			},
+			"outputValue": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
