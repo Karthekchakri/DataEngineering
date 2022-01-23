@@ -1,0 +1,95 @@
+{
+	"name": "DS_ABS_Source_Multi",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ABS_Blob_to_Blob_DynamicCopy",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"SourceContainer": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": {
+					"value": "@dataset().SourceContainer",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "VaccineID",
+				"type": "String"
+			},
+			{
+				"name": "MemberID",
+				"type": "String"
+			},
+			{
+				"name": "VaccineDate",
+				"type": "String"
+			},
+			{
+				"name": "Lot",
+				"type": "String"
+			},
+			{
+				"name": "ExpDate",
+				"type": "String"
+			},
+			{
+				"name": "Manufacturer",
+				"type": "String"
+			},
+			{
+				"name": "DoseNumber",
+				"type": "String"
+			},
+			{
+				"name": "Site",
+				"type": "String"
+			},
+			{
+				"name": "ProviderSuffix",
+				"type": "String"
+			},
+			{
+				"name": "Location",
+				"type": "String"
+			},
+			{
+				"name": "LocationAddress",
+				"type": "String"
+			},
+			{
+				"name": "LocationAddress2",
+				"type": "String"
+			},
+			{
+				"name": "LocationCity",
+				"type": "String"
+			},
+			{
+				"name": "LocationState",
+				"type": "String"
+			},
+			{
+				"name": "LocationZipCode",
+				"type": "String"
+			},
+			{
+				"name": "DateCreated",
+				"type": "String"
+			}
+		]
+	}
+}

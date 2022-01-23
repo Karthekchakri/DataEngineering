@@ -1,0 +1,27 @@
+{
+	"name": "DS_ABS_Sink_Multi",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ABS_Blob_to_Blob_DynamicCopy",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"SinkContainer": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "sink"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
