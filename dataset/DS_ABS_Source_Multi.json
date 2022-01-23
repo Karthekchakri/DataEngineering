@@ -8,6 +8,9 @@
 		"parameters": {
 			"SourceContainer": {
 				"type": "string"
+			},
+			"SourceFileName": {
+				"type": "string"
 			}
 		},
 		"annotations": [],
@@ -15,6 +18,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().SourceFileName",
+					"type": "Expression"
+				},
 				"container": {
 					"value": "@dataset().SourceContainer",
 					"type": "Expression"

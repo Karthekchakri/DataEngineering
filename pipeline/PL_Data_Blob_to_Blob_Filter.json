@@ -67,6 +67,11 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@activity('Filter_FileName').output.Value",
+						"type": "Expression"
+					},
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "CP_Data_Foreach_file",
@@ -117,13 +122,27 @@
 							"inputs": [
 								{
 									"referenceName": "DS_ABS_Source_Multi",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"SourceContainer": "source",
+										"SourceFileName": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
 								{
 									"referenceName": "DS_ABS_Sink_Multi",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"SinkContainer": "sink",
+										"SinkFileName": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}

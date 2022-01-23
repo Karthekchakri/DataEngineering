@@ -8,6 +8,9 @@
 		"parameters": {
 			"SinkContainer": {
 				"type": "string"
+			},
+			"SinkFileName": {
+				"type": "string"
 			}
 		},
 		"annotations": [],
@@ -15,6 +18,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().SinkFileName",
+					"type": "Expression"
+				},
 				"container": "sink"
 			},
 			"columnDelimiter": ",",
