@@ -22,7 +22,10 @@
 					"value": "@dataset().SinkFileName",
 					"type": "Expression"
 				},
-				"container": "sink"
+				"container": {
+					"value": "@dataset().SinkContainer",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
