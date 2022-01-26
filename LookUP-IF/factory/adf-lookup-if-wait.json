@@ -1,0 +1,9 @@
+{
+	"name": "adf-lookup-if-wait",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "968bfcc7-14c0-4984-bd89-35c7cfad6335",
+		"tenantId": "5f655bda-efcc-4721-8056-b2eac8d124f3"
+	}
+}
