@@ -1,0 +1,31 @@
+{
+	"name": "DS_ABS_getcontainers",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ABS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "metadata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "sourcecontainernames",
+				"type": "String"
+			},
+			{
+				"name": "targetcontainernames",
+				"type": "String"
+			}
+		]
+	}
+}
