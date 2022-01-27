@@ -1,0 +1,40 @@
+{
+	"name": "DS_ABS_Training",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ABS_CSV_ADDCOLUMNS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "training"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Month",
+				"type": "String"
+			},
+			{
+				"name": " \"1958\"",
+				"type": "String"
+			},
+			{
+				"name": " \"1959\"",
+				"type": "String"
+			},
+			{
+				"name": " \"1960\"",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,80 @@
+{
+	"name": "DS_ABS_Training_Output",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ABS_CSV_ADDCOLUMNS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "trainingoutput"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Issue key",
+				"type": "String"
+			},
+			{
+				"name": "Issue id",
+				"type": "String"
+			},
+			{
+				"name": "Summary",
+				"type": "String"
+			},
+			{
+				"name": "Assignee",
+				"type": "String"
+			},
+			{
+				"name": "Priority",
+				"type": "String"
+			},
+			{
+				"name": "Status",
+				"type": "String"
+			},
+			{
+				"name": "Custom field (Story Points)",
+				"type": "String"
+			},
+			{
+				"name": "Issue Type",
+				"type": "String"
+			},
+			{
+				"name": "Custom field (Developer)",
+				"type": "String"
+			},
+			{
+				"name": "Sprint",
+				"type": "String"
+			},
+			{
+				"name": "Estimation",
+				"type": "String"
+			},
+			{
+				"name": "Time Spent",
+				"type": "String"
+			},
+			{
+				"name": "Custom field (Team)",
+				"type": "String"
+			},
+			{
+				"name": "Custom field (Time in Status)",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

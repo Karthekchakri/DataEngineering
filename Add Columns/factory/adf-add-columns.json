@@ -1,0 +1,9 @@
+{
+	"name": "adf-add-columns",
+	"location": "southcentralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "274740b4-7ff3-4967-bde7-7461b20f243d",
+		"tenantId": "5f655bda-efcc-4721-8056-b2eac8d124f3"
+	}
+}
