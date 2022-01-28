@@ -1,0 +1,9 @@
+{
+	"name": "adf-sql-logging",
+	"location": "southcentralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5325aaf5-b9eb-4510-88c9-9fc41af9934a",
+		"tenantId": "5f655bda-efcc-4721-8056-b2eac8d124f3"
+	}
+}
