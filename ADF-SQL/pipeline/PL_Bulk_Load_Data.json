@@ -79,47 +79,6 @@
 									"columnCount"
 								]
 							}
-						},
-						{
-							"name": "IF_TABLE_EXISTS",
-							"type": "IfCondition",
-							"dependsOn": [
-								{
-									"activity": "GetMetaData-BulkFile",
-									"dependencyConditions": [
-										"Succeeded"
-									]
-								}
-							],
-							"userProperties": [],
-							"typeProperties": {
-								"expression": {
-									"value": "1==1",
-									"type": "Expression"
-								},
-								"ifFalseActivities": [
-									{
-										"name": "Wait2",
-										"type": "Wait",
-										"dependsOn": [],
-										"userProperties": [],
-										"typeProperties": {
-											"waitTimeInSeconds": 1
-										}
-									}
-								],
-								"ifTrueActivities": [
-									{
-										"name": "Wait1",
-										"type": "Wait",
-										"dependsOn": [],
-										"userProperties": [],
-										"typeProperties": {
-											"waitTimeInSeconds": 1
-										}
-									}
-								]
-							}
 						}
 					]
 				}
