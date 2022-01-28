@@ -26,11 +26,7 @@
 				"name": "skill",
 				"type": "varchar"
 			}
-		],
-		"typeProperties": {
-			"schema": "dbo",
-			"table": "playes"
-		}
+		]
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }
