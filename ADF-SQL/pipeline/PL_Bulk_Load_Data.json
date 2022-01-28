@@ -58,11 +58,7 @@
 								"secureOutput": false,
 								"secureInput": false
 							},
-							"userProperties": [
-								{
-									"name": "SourceTable"
-								}
-							],
+							"userProperties": [],
 							"typeProperties": {
 								"dataset": {
 									"referenceName": "DS_MetaData_table",
