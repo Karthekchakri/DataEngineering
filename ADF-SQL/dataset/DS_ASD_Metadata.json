@@ -1,0 +1,30 @@
+{
+	"name": "DS_ASD_Metadata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ASD",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"sourceSchemaName": {
+				"type": "string"
+			},
+			"sourceTableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().sourceSchemaName",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().sourceTableName",
+				"type": "Expression"
+			}
+		}
+	}
+}
