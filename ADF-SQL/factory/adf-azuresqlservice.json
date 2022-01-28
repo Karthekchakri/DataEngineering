@@ -1,0 +1,9 @@
+{
+	"name": "adf-azuresqlservice",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "052bb7d5-82e6-44b7-9622-bb5523bd381a",
+		"tenantId": "5f655bda-efcc-4721-8056-b2eac8d124f3"
+	}
+}

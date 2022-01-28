@@ -1,0 +1,36 @@
+{
+	"name": "DS_ASD",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ASD",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "playerid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "playername",
+				"type": "varchar"
+			},
+			{
+				"name": "age",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "skill",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "playes"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
