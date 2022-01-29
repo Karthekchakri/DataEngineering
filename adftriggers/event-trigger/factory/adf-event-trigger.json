@@ -1,0 +1,9 @@
+{
+	"name": "adf-event-trigger",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0eedd1ed-c07e-4109-84b1-8f87ea48ac10",
+		"tenantId": "5f655bda-efcc-4721-8056-b2eac8d124f3"
+	}
+}
