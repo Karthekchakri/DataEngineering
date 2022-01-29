@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-event-trigger"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"eventTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/9cb7ce9a-7035-4431-89b2-67afdb6a0a51/resourceGroups/ADF/providers/Microsoft.Storage/storageAccounts/adfstorage0428"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
